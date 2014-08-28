@@ -27,6 +27,7 @@ config: {
   port: 6379,
   host: 'localhost',
   password: null,
+  url: null,
   options: {
   
     // low-level configuration
@@ -40,6 +41,9 @@ config: {
   }
 };
 ```
+
+*Note: if a url is specified as part of the config object it will be used instead of the `port`, `host`, and
+`password`, which is useful when using services like Heroku.*
 
 #### Low-Level Configuration (for redis driver)
 
